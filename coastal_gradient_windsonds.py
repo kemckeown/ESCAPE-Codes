@@ -35,8 +35,8 @@ import metpy.calc as mpcalc
 ## For down, get rid of the 'j' files
 
 ## Directories for CMAS and SKYLER Windsonds
-cmas_dir = '/Users/kem6245/Documents/Python Copy/ESCAPE/2 June 2022 Windsonde Data/coastal_gradient/cmas/'
-skyler_dir = '/Users/kem6245/Documents/Python Copy/ESCAPE/2 June 2022 Windsonde Data/coastal_gradient/skyler/'
+cmas_dir = 'cmas/'
+skyler_dir = 'skyler/'
 
 # Common Height Grid
 common_heights = np.arange(0, 4500, 25) * units.m
@@ -218,7 +218,7 @@ print()
 # fig.tight_layout(pad=2.0, rect=[0, 0.1, 1, 1])
 
 
-##plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/gradient_windsonds_down', dpi=300)
+##plt.savefig('gradient_windsonds_down', dpi=300)
 
 
 cmap = plt.get_cmap('viridis')
@@ -253,4 +253,4 @@ ax.grid(True)
 fig.legend(labels, loc='lower center', bbox_to_anchor=(0.5, 0.05), ncol=4, fontsize=11)
 fig.tight_layout(pad=2.0, rect=[0, 0.1, 1, 1])
 
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/coastal_grad_theta_v_agu_v1.png', dpi=300)
+plt.savefig('coastal_grad_theta_v_agu_v1.png', dpi=300)
