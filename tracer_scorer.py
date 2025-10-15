@@ -35,7 +35,7 @@ import math
 from scipy import signal
 import xarray as xr
 
-WSR1 = xr.open_dataset('/Users/kem6245/Documents/Python Copy/ESCAPE/TRACER_Data/M1/housondewnpnM1.b1.20220602.112900.cdf')
+WSR1 = xr.open_dataset('file')
 
 print(WSR1.data_vars)
 sfc_ht_lp = 6
@@ -415,7 +415,7 @@ fig.subplots_adjust(top=0.85)
 ax1.grid(True)
 
 
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/tracer_1129_panel_d_scorer', dpi = 300)
+plt.savefig('file_figure', dpi = 300)
 
 
 
