@@ -34,8 +34,8 @@ def str2dt(time):
     return datetime.strptime(time, '%H:%M:%S')
 
 
-ws2 = pd.read_csv('/Users/kem6245/Documents/Python Copy/ESCAPE/2 June 2022 Windsonde Data/SKYLER_Individual/2022-06-02_1417.raw_history.csv')        
-ws1 = pd.read_csv('/Users/kem6245/Documents/Python Copy/ESCAPE/2 June 2022 Windsonde Data/Updated_Windsonds/CMAS/a_cmas_1428.csv')
+ws2 = pd.read_csv('file')        
+ws1 = pd.read_csv('file')
 
 h1 = ws1[' Altitude (m AGL)']
 p1 = ws1[' Pressure (Pascal)']
@@ -115,7 +115,7 @@ plt.grid(True, linestyle='--', alpha=0.7)
 # Show the plot
 plt.tight_layout()
 
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/thetaes.png', dpi=300)
+plt.savefig('file_figure', dpi=300)
 
 
 
