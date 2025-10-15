@@ -123,7 +123,7 @@ for i, (file, ax, time) in enumerate(zip(our_files, axes, scan_times)):
 
 
 
-plt.savefig("/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/late_period_radar_v5_zoomed_filter_0.pdf", bbox_inches="tight", dpi=300)
+plt.savefig("late_period_radar_v5_zoomed_filter_0.pdf", bbox_inches="tight", dpi=300)
 
 
 
