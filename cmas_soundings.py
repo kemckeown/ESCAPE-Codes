@@ -47,7 +47,7 @@ def cmas_filtering(month_str,day_str,time_str,p,t,td,u,v, wind_speed, h):
         
         print('Please check your sounding info. You must have made a mistake.')
         
-cmas_radiosondes = '/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Data/LidarTruck/GrawmetSounding/2_June_2022'
+cmas_radiosondes = '2_June_2022'
 
 if not os.path.exists(cmas_radiosondes):
     print("❌ Directory does not exist:", cmas_radiosondes)
@@ -174,7 +174,7 @@ for file in os.scandir(cmas_radiosondes):
     
         skew.ax.set_title('CMAS Sounding '  + ' ' + file_name[-9:-7] + ':' + file_name[-7:-5])
 
-    #plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/CMAS_Sounding'+'_'+file_name[-9:-5], dpi=300)
+    #plt.savefig('/CMAS_Sounding'+'_'+file_name[-9:-5], dpi=300)
 
      ## CAPE and CIN 
         cape, cin=mpcalc.surface_based_cape_cin(p,t,td)
