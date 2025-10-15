@@ -152,8 +152,7 @@ plt.tight_layout()
 ax.set_title("2 June 2022 Deployment Sites", fontsize=20)
 
 
-#plt.savefig('/Users/kem6245/Documents/NSF Proposal/nsf_proposal_figure1_v2.png', dpi=300)
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/updated_site_locations.png', dpi=300)
+plt.savefig('updated_site_locations.png', dpi=300)
 
 
 
