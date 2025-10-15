@@ -185,10 +185,10 @@ cbar.ax.tick_params(labelsize=14)  # Increase tick label font size
 plt.tight_layout(rect=[0, 0, 0.9, 1])  # Leave space for the colorbar
 
 
-plt.savefig("/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 2/9_panel_radar_paper2_v2.png", bbox_inches="tight", dpi=300)
+plt.savefig("/9_panel_radar_paper2_v2.png", bbox_inches="tight", dpi=300)
 #plt.close()
 
-#/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/RAP/rap_130_20220602_1200_000.grb2
+#rap_130_20220602_1200_000.grb2
 
 
 
