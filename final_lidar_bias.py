@@ -16,15 +16,15 @@ from netCDF4 import Dataset
 # Read in the TRACER AMF1 data
 
 file_list = [
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.100113.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.110113.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.120113.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.130112.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.140112.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.150112.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.160112.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.170112.cdf',
-    '/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Data/TRACER_Lidar/houdlfptM1.b1.20220602.180112.cdf'
+    'houdlfptM1.b1.20220602.100113.cdf',
+    'houdlfptM1.b1.20220602.110113.cdf',
+    'houdlfptM1.b1.20220602.120113.cdf',
+    'houdlfptM1.b1.20220602.130112.cdf',
+    'houdlfptM1.b1.20220602.140112.cdf',
+    'houdlfptM1.b1.20220602.150112.cdf',
+    'TRACER_LidarhoudlfptM1.b1.20220602.160112.cdf',
+    'houdlfptM1.b1.20220602.170112.cdf',
+    'houdlfptM1.b1.20220602.180112.cdf'
 ]
 
 all_times = []
@@ -106,5 +106,5 @@ ax.set_xlabel("Time (UTC)", fontsize=12)
 ax.set_title('AMF1 Lidar Doppler Velocity', fontsize=16)
 
 plt.tight_layout()
-plt.savefig('/Volumes/McKeown/Penn State/Penn State Laptop /Python Copy final/ESCAPE/ESCAPE_Figures/Paper 2/paper2_tracer_lidar_updated.png', dpi=300)
+plt.savefig('paper2_tracer_lidar_updated.png', dpi=300)
 plt.show()
