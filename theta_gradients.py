@@ -30,28 +30,28 @@ from array import *
 ## Next, we need our directories 
 
 ## Land Regime Directories
-ll1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Land 1"
-ll2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Land 2"
-lg1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Gulf 1"
-lg2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Gulf 2"
+ll1 = "Land 1"
+ll2 = "Land 2"
+lg1 = "Gulf 1"
+lg2 = "Gulf 2"
 
 ## Gulf Regime Directories
-gl1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Land 1"
-gl2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Land 2"
-gg1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Gulf 1"
-gg2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Gulf 2"
+gl1 = "Land 1"
+gl2 = "Land 2"
+gg1 = "Gulf 1"
+gg2 = "Gulf 2"
 
 ## DWL Regime Directories
-b1l1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Land 1"
-b1l2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Land 2"
-b1g1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Gulf 1"
-b1g2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Gulf 2"
+b1l1 = "Land 1"
+b1l2 = "Land 2"
+b1g1 = "Gulf 1"
+b1g2 = "Gulf 2"
 
 ## DWL Regime Directories
-b2l1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Land 1"
-b2l2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Land 2"
-b2g1 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Gulf 1"
-b2g2 = "/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Gulf 2"
+b2l1 = "Land 1"
+b2l2 = "Land 2"
+b2g1 = "Gulf 1"
+b2g2 = "Gulf 2"
 
 ###############################################################################################
 ## Next, we need to preallocate all of our arrays. We only need to do this for the variables
@@ -189,7 +189,7 @@ for file in os.scandir(ll1):
     
     
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Land 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
     
     ## Read in the data
@@ -234,7 +234,7 @@ for file in os.scandir(ll2):
     
     
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Land 2/.DS_Store':
+    if file_name == '.DS_Store':
         continue
     
     ## Read in the data
@@ -275,7 +275,7 @@ for file in os.scandir(lg1):
     
     
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Gulf 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
     
     ## Read in the data
@@ -316,7 +316,7 @@ for file in os.scandir(lg2):
     
     
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Land_Data/CSV Files/Gulf 2/.DS_Store':
+    if file_name == '.DS_Store':
         continue
     
     ## Read in the data
@@ -361,7 +361,7 @@ for file in os.scandir(gl1):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Land 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -404,7 +404,7 @@ for file in os.scandir(gl2):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Land 2/.DS_Store':
+    if file_name == .DS_Store':
         continue
     
     ## Read in the data
@@ -445,7 +445,7 @@ for file in os.scandir(gg1):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Gulf 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -486,7 +486,7 @@ for file in os.scandir(gg2):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Gulf_Data/CSV Files/Gulf 2/.DS_Store':
+    if file_name == '/.DS_Store':
         continue
         
     ## Read in the data
@@ -532,7 +532,7 @@ for file in os.scandir(b1l1):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Land 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -575,7 +575,7 @@ for file in os.scandir(b1l2):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Land 2/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -615,7 +615,7 @@ for file in os.scandir(b1g1):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Gulf 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
     
     ## Read in the data
@@ -656,7 +656,7 @@ for file in os.scandir(b1g2):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 1 RAP Comp/CSV/Gulf 2/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -703,7 +703,7 @@ for file in os.scandir(b2l1):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Land 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -746,7 +746,7 @@ for file in os.scandir(b2l2):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Land 2/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -788,7 +788,7 @@ for file in os.scandir(b2g1):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Gulf 1/.DS_Store':
+    if file_name == '.DS_Store':
         continue
     
     ## Read in the data
@@ -829,7 +829,7 @@ for file in os.scandir(b2g2):
         
         
     ## Skip the file that's causing the issue
-    if file_name == '/Users/kem6245/Documents/Python Copy/ESCAPE/RAP_Data/Both Mode 2 RAP Comp/CSV/Gulf 2/.DS_Store':
+    if file_name == '.DS_Store':
         continue
         
     ## Read in the data
@@ -1207,7 +1207,7 @@ ax.legend(fontsize = 14)
 ax.set_title('(B) LAND vs. GULF', fontsize=16)
 ax.legend(frameon=False, loc='lower center', bbox_to_anchor=(0.5, -0.45), ncol=4)
 plt.tight_layout()
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_thetav_noshade_lg_85', dpi = 300)
+plt.savefig('gradient_thetav_noshade_lg_85', dpi = 300)
 
 
 
@@ -1240,7 +1240,7 @@ ax.set_xlim(-3,3)
 ax.legend(fontsize = 14)
 ax.legend(frameon=False, loc='lower center', bbox_to_anchor=(0.5, -0.45), ncol=4)
 plt.tight_layout()
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_thetav_dwl_l_85', dpi = 300)
+plt.savefig('gradient_thetav_dwl_l_85', dpi = 300)
 
             
             
@@ -1274,8 +1274,8 @@ ax.legend(fontsize = 14)
 ax.legend(frameon=False, loc='lower center', bbox_to_anchor=(0.5, -0.45), ncol=4)
 plt.tight_layout()
 
-##plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_thetav')
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_thetav_dwg_l_85', dpi = 300)
+##plt.savefig('gradient_thetav')
+plt.savefig('gradient_thetav_dwg_l_85', dpi = 300)
 # Now we need to make our figure for theta v for median
 
 # fig = plt.figure(figsize=(8,8))
@@ -1298,7 +1298,7 @@ plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/
 # ax.legend(frameon=False, loc='lower center', bbox_to_anchor=(0.5, -0.45), ncol=4)
 # plt.tight_layout()
 
-# plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_theta_med', dpi = 300)
+# plt.savefig('gradient_theta_med', dpi = 300)
 
 # Now we need to make our figure for theta v for median
 
@@ -1323,7 +1323,7 @@ ax.legend(fontsize = 14)
 ax.legend(frameon=False, loc='lower center', bbox_to_anchor=(0.5, -0.45), ncol=4)
 plt.tight_layout()
 
-plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_theta_mean', dpi = 300)
+plt.savefig('gradient_theta_mean', dpi = 300)
 
 
 
@@ -1777,8 +1777,8 @@ plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/
 # ax.legend(frameon=False, loc='lower center', bbox_to_anchor=(0.5, -0.45), ncol=4)
 # plt.tight_layout()
 
-# ##plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_thetav')
-# plt.savefig('/Users/kem6245/Documents/Python Copy/ESCAPE/ESCAPE_Figures/Paper 1/gradient_thetaes')
+# ##plt.savefig('gradient_thetav')
+# plt.savefig('gradient_thetaes')
 
 
 
